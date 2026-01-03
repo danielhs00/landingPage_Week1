@@ -7,16 +7,17 @@
 </head>
 <body>
     <h1>Welcome to My Website</h1>
-    <nav id="navigation">
-        <h2>Navigtion Bar</h2>
-        <a href="#home-profil">Home</a>
-        <a href="#about-us">About</a>
-        <a href="#contact-form">Contact</a>
+    <nav>
+        <ul>
+            <li><a href="#home-profil">Home</a></li>
+            <li><a href="#about-us">About</a></li>
+            <li><a href="#contact-form">Contact</a></li>
+        </ul>
     </nav>
     <main>
         <section id="home-profil">
             <h2>Home</h2>
-            <button><a href="#navigation">Back to navigation</a></button>
+            <button type="button">Click Me!</button>
         </section>
         <section id="about-us">
             <h2>About</h2>
@@ -25,14 +26,16 @@
         <section id="contact-form">
             <h2>Contact</h2>
             <p>Contact us please fill out the form below</p>
-            <ul>
+            <form action="index.html">
                 <label for="name">Name: </label>
-                <li><input type="text" id="name"></li>
+                <input type="text" id="name">
                 <label for="email">Email: </label>
-                <li><input type="email" id="email"></li>
+                <input type="email" id="email">
                 <label for="message">Message</label>
-                <li><textarea name="message" id="message"></textarea>></li>
-            </ul>
+                <textarea name="message" id="message"></textarea>
+
+                <button type="submit">Send</button>
+            </form>
         </section>
     </main>
 </body>
