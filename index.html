@@ -7,30 +7,31 @@
 </head>
 <body>
     <h1>Welcome to My Website</h1>
-    <nav>
+    <nav id="navigation">
         <h2>Navigtion Bar</h2>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <a href="#home-profil">Home</a>
+        <a href="#about-us">About</a>
+        <a href="#contact-form">Contact</a>
     </nav>
     <main>
-        <section id="home">
+        <section id="home-profil">
             <h2>Home</h2>
-            <button><a href="navigation">Back to navigation</a></button>
+            <button><a href="#navigation">Back to navigation</a></button>
         </section>
-        <section id="about">
+        <section id="about-us">
             <h2>About</h2>
             <p>In this Website i will write everything i learn form youtube sandika galih. Sandika galih have youtube channel, the channel name is WPU. There a lot tutorial how to be a full stack programmer.</p>
         </section>
-        <section id="contact">
+        <section id="contact-form">
             <h2>Contact</h2>
             <p>Contact us please fill out the form below</p>
             <ul>
-                <li><input type="text" id="name">Name</li>
-                <li><input type="email" id="email">Email</li>
-                <li><textarea name="message" id="message">Message</textarea>></li>
+                <label for="name">Name: </label>
+                <li><input type="text" id="name"></li>
+                <label for="email">Email: </label>
+                <li><input type="email" id="email"></li>
+                <label for="message">Message</label>
+                <li><textarea name="message" id="message"></textarea>></li>
             </ul>
         </section>
     </main>
